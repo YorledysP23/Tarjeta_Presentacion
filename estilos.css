@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.tarjeta {
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px orange;
+}
+
+
+.tarjeta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px orange;
+}
+
+.imagen-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.nombre-usuario {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.profesion {
+  font-size: 18px;
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+}
+
+.descripcion {
+  font-size: 16px;
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+}
+
+.boton-contacto {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.boton-contacto:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 768px) {
+  .tarjeta {
+    width: 90%;
+  }
+}
